@@ -1,0 +1,190 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --darkcyan: hsl(179, 100%, 13%);
+  --background:hsl(0, 0%, 95%);
+  --paragraph :hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+  padding : 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+@media ( min-width:768px ) {
+  .eztemplate {
+    width: 1440px;
+    height: 800px;
+    background-color: var(--background);
+  }
+  .threebox {
+    width: 930px;
+    height: 500px;
+    position: absolute;
+    top: 170px;
+    left: 260px;
+    bottom: 130px;
+    display: flex;
+  }
+  .box{
+    padding: 50px ;
+    display: inline-block;
+    width: 310px !important;
+    height: 100%;
+    margin: 0;
+  }
+  img {
+    margin-bottom: 40px;
+  }
+  .title h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--background);
+  }
+  .des {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 85px;
+    color: var(--paragraph);
+  }
+  .learnmore {
+    width: 145px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 145px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: var(--background);
+  }
+  button:focus {
+    outline: none;
+  }
+  .sedans {
+    background-color: var(--orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .sedans .learnmore{ 
+    color: var(--orange);
+  }
+  .sedans .learnmore:hover{ 
+    background-color: var(--orange);
+    color: white;
+  }
+  .suvs {
+    background-color: var(--cyan);
+  }
+  .suvs .learnmore{ 
+    color: var(--cyan);
+  }
+  .suvs .learnmore:hover{ 
+    background-color: var(--cyan);
+    color: white;
+  }
+  .luxury {
+    background-color: var(--darkcyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .luxury .learnmore{ 
+    color: var(--darkcyan);
+  }
+  .luxury .learnmore:hover{ 
+    background-color: var(--darkcyan);
+    color: white;
+  }
+}
+@media ( max-width:767px ) {
+  .eztemplate {
+    width: 375px;
+    height: 1500px;
+    background-color: hsl(0, 0%, 95%);
+  }
+  .threebox {
+    width: 325px;
+    height: 500px;
+    position: absolute;
+    top: 90px;
+    left: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .box{
+    padding: 50px ;
+    display: inline-block;
+    width: 325px;
+    height: 100%;
+    margin: 0;
+  }
+  img {
+    margin-bottom: 40px;
+  }
+  .title h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+  }
+  .des {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .learnmore {
+    width: 145px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 145px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+  }
+  button:focus {
+    outline: none;
+  }
+  .sedans {
+    background-color: var(--orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .sedans .learnmore{ 
+    color: var(--orange);
+  }
+  .sedans .learnmore:hover{ 
+    background-color: var(--orange);
+    color: white;
+  }
+  .suvs .learnmore:hover{ 
+    background-color: var(--cyan);
+    color: white;
+  }
+  .luxury .learnmore:hover{ 
+    background-color: var(--darkcyan);
+    color: white;
+  }
+  .suvs {
+    background-color: var(--cyan);
+  }
+  .suvs .learnmore{ 
+    color: var(--cyan);
+  }
+  .luxury {
+    background-color: var(--darkcyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .luxury .learnmore{ 
+    color: var(--darkcyan);
+  }
+  
+}
+  
