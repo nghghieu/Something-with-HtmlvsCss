@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="bear">
+        <div class="circle-face">
+            <div class="hair"></div>
+            <div class="eyes">
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+            </div>
+            <div class="mouth">
+            </div>
+            <div class="noses">
+                <div class="nose nose-left"></div>
+                <div class="nose nose-right"></div>
+                <div class="nose-straight"></div>
+            </div>
+        </div>
+        <div class="circle-ears ears-left">
+            <div class="ears-inside"></div>
+        </div>
+        <div class="circle-ears ears-right">
+            <div class="ears-inside"></div>
+        </div>
+    </div>
+
+    <style>
+        *{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bear {
+    width: 400px;
+    height: 400px;
+    background-color: #f3ab3d;
+    position: relative;
+}
+.circle-face {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50% , -50%);
+    background-color: #998236;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    z-index: 2;
+    overflow: hidden;
+}
+.circle-ears {
+    width: 70px;
+    height: 70px;
+    background-color: #998236;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+.ears-left {
+    top: 23%;
+    left: 26%;
+}
+.ears-right {
+    top: 5%;
+    left: 55%;
+}
+.ears-inside {
+    width: 40px;
+    height: 40px;
+    background-color: #1a453c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50% , -50%);
+    border-radius: 50%;
+}
+.hair {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top : 20px solid #1a453c;
+    border-left : 20px solid transparent;
+    border-right : 20px solid transparent;
+}
+.eye {
+    width: 30px;
+    height: 30px;
+    background-color: #1a453c;
+    border-radius: 50%;
+    position: absolute;
+}
+.eye-left {
+    top: 32%;
+    left: 21%;
+}
+.eye-right {
+top: 32%;
+left: 62%;
+}
+.mouth {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 126px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: white;
+}
+.nose {
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+}
+.nose-left {
+    position: absolute;
+    top: 55%;
+    left: 27%;
+    border-top : 15px solid transparent;
+    border-left : 15px solid transparent;
+    border-right : 15px solid #1a453c;
+    border-bottom : 15px solid #1a453c;
+    border-radius: 50%;
+    transform: rotate(46deg);
+}
+.nose-right {
+    position: absolute;
+    top: 55%;
+    left: 47%;
+    border-top : 15px solid transparent;
+    border-right : 15px solid transparent;
+    border-left : 15px solid #1a453c;
+    border-bottom : 15px solid #1a453c;
+    border-radius: 50%;
+    transform: rotate(-46deg);
+}
+.nose-straight {
+    position: absolute;
+    top: 54%;
+    left: 84px;
+    width: 16px;
+    height: 30px;
+    background-color: #1a453c;
+}
+    </style>
+</body>
+</html>

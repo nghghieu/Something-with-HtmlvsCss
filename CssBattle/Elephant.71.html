@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elephant#71</title>
+</head>
+<body>
+  <div class="frame">
+    <div class="face">
+      <div class="eye eye-left">
+        <div class="eye-inside"></div>
+      </div>
+      <div class="eye eye-right">
+        <div class="eye-inside"></div>
+      </div>
+    </div>
+    <div class="ear ear-left">
+      <div class="ear-inside inside-left"></div>
+    </div>
+    <div class="ear ear-right">
+      <div class="ear-inside inside-right"></div>
+    </div>
+    <div class="beard"></div>
+    <div class="nose"></div>
+  </div>
+  <style>
+    * {
+      padding : 0;
+      margin : 0;
+      box-sizing : border-box;
+    }
+    .nose {
+      width: 40px;
+      height: 120px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      background-color: #0B2429;
+      position : absolute ;
+      bottom: 0;
+      left: 180px;
+      z-index: 4;
+    }
+
+    .beard {
+      width: 120px;
+      height: 60px;
+      border-top-left-radius: 120px;
+      border-top-right-radius: 120px;
+      border-top: 20px solid #fff;
+      border-left: 20px solid #fff;
+      border-right: 20px solid #fff;
+      position : absolute ;
+      top: 190px;
+      right: 140px;
+      z-index: 3;
+    }
+    .ear-left {
+      position : absolute ;
+      top: 60px;
+      left: 50px;
+      
+    }
+    .ear-right {
+      position : absolute ;
+      top: 60px;
+      right: 50px;
+    }
+    .ear-inside {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background-color: #0B2429;
+    }
+    .inside-left {
+      transform: translateX(16px);
+    }
+    .inside-right {
+      transform: translateX(-16px);
+    }
+    .eye {
+      width: 40px;
+      height: 20px;
+      background-color: #998235;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: relative;
+    }
+    .eye-left {
+      position : absolute ;
+      top: 90px;
+      left: 40px;
+    }
+    .eye-right {
+      position : absolute ;
+      top: 90px;
+      right: 40px;
+    }
+    .ear {
+      width: 80px;
+      height: 180px;
+      background-color : #1A4341 ;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .eye-inside {
+      width: 20px;
+      height: 10px;
+      background-color: #0B2429;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      position : absolute ;
+      top : 0;
+      left : 50% ;
+      transform : translateX(-50%);
+    }
+    .frame {
+      width: 400px;
+      height: 300px;
+      background-color: #998235;
+      position : relative;
+    }
+    .face {
+      width : 180px;
+      height : 180px;
+      border-radius : 50%;
+      background-color : #1A4341 ;
+      position : absolute ;
+      top : 50%;
+      left : 50% ;
+      transform : translate(-50%,-50%);
+      z-index: 2;
+    }
+    </style>
+</body>
+</html>
+

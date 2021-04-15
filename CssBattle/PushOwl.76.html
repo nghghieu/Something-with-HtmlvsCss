@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pushowl">
+        <div class="center">
+            <div class="eye eye-left">
+                <div class="inside">
+                    <div class="inside-eye">
+                        <div class="eye-inside"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nose">
+                <div class="nose-box"></div>
+            </div>
+            <div class="eye eye-right">
+                <div class="inside">
+                    <div class="inside-eye">
+                        <div class="eye-inside"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+<style>
+    * {padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    .pushowl {
+        width: 400px;
+        height: 300px;
+        background-color:#191919;
+    }
+    .center {
+        position: relative;
+    }
+    .eye {
+        width: 120px ;
+        height: 120px;
+        background-color: #E08027;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+    .eye-left {
+        border: 10px solid #191919;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        transform: translate(100px,55px);
+    }
+    
+    .eye-right {
+        border: 10px solid #191919;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        transform: translate(197px,55px);
+    }
+    .inside {
+        position: absolute;
+        top :50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #191919;
+    }
+    .inside-eye {
+        position: absolute;
+        top :50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .eye-inside {
+        width: 30px;
+        height: 30px;
+        border :10px solid #E08027;
+        border-left :10px solid transparent;
+        border-bottom :10px solid transparent;
+        border-radius: 50%;
+       transform: rotate(-45deg);
+    }
+    .nose-box {
+        width: 40px;
+        height: 40px;
+        background-color: #E08027;
+        transform: rotate(45deg);
+        
+    }
+    .nose {
+        transform: translate(185px,138px);
+    }
+</style>
+</body>
+</html>

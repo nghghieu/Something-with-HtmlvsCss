@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee#76</title>
+</head>
+<body>
+    <style>
+        * {
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bee {
+    background-color: #998235;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+.frame {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.center {
+    position: relative;
+}
+.wings {
+    position: unset;
+}
+.wing-left{
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -70px;
+    left: -75px;
+}
+.wing-right{
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -70px;
+    left: -5px;
+}
+.bee .body {
+    width: 150px;
+    height: 75px;
+    border-radius: 50px;
+    background-color:#EFF33C;
+    position: absolute;
+    top: 0px;
+    left: -80px;
+    overflow: hidden;
+}
+.body-black {
+    width: 25px;
+    height: 100%;
+    background-color: #191919;
+    position: absolute;
+    top: 0px;
+    left: 62px;
+}
+.black-one {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.black-two {
+    position: absolute;
+    top: 0px;
+    left: 31px;
+}
+.body-eye {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #191919;
+
+}
+    </style>
+    <div class="bee">
+        <div class="frame">
+        <div class="center">
+            <div class="wings">
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="body">
+                <div class="body-third">
+                    <div class="body-black black-one"></div>
+                    <div class="body-black black-two"></div>
+                    <div class="body-black black-three"></div>
+                </div>
+                <div class="body-eye"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
