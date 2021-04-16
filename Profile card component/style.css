@@ -1,0 +1,100 @@
+:root {
+
+    --darkcyan: hsl(185, 75%, 39%);
+    --desaturatedblue: hsl(229, 23%, 23%);
+    --grayishblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+}
+* {
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.profile {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkcyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.profile-box {
+    width: 350px;
+    height: 375px;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.top {
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+.top .author-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top : 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content {
+    font-size: 18px !important;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 75px;
+    color: var(--darkgray);
+}
+.content .name {
+    font-weight: 700;
+    display: inline;
+    color: var(--desaturatedblue);
+}
+.footer {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #ccc;
+    font-size: 18px;
+}
+.react-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.react-box .number {
+    font-weight: 700;
+    color: var(--desaturatedblue);
+}
+.react-box .number-des {
+    color: var(--darkgray);
+}
+.circle-top {
+    position: absolute;
+    top : 0;
+    left: -20%;
+    z-index: 1;
+    transform: translateY(-50%);
+
+}
+.circle-bottom {
+    position: absolute;
+    bottom : -40%;
+    right: -20%;
+    z-index: 1;
+    transform: translateY(20%);
+}
